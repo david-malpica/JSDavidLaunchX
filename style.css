@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    max-width: 1400px;
 }
 
 img {
@@ -12,80 +16,6 @@ img {
     display: block;
 }
 
-h1, h2, span {
-    font-size: 1em;
-    font-weight: inherit;
-    text-decoration: none;
-    color: inherit;
-}
-
-button, label {
-    font-family: inherit;
-    font-size: inherit;
-    background-color: transparent;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    grid-template-rows: auto 1fr;
-    background-color: rgba(12, 12, 192, 0.397);
-    min-height: 100vh;
-}
-
-.title {
-    text-align: center;
-    font-size: 28px;
-    padding: 10px;
-}
-
-.btn {
-    background-color: rgb(224, 7, 7);
-    color: white;
-    width: 150px;
-    padding: 4px;
-    border-radius: 4px;
-    justify-self: end;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.pokeSearch {
-    width: 100px;
-    padding: 3px;
-    border-radius: 3px;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.pokeName {
-    text-transform: capitalize;
-    font-size: 24px;
-    grid-row: 2;
-    grid-column: 1;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.pokeImg {
-    width: 250px;
-    object-fit: cover;
-    object-position: center center;
-    grid-row: 2;
-    grid-column: 1;
-    padding: 20px;
-}
-
-.pokeStats {
-    padding: 5px;
-    grid-column: 2;
-    grid-row: 2;
-}
 
 #pokeAb {
     text-transform: capitalize;
