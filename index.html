@@ -12,13 +12,14 @@
     <div class="container">
         <header class="header">
             <h1 class="title">Pokedex LaunchX</h1>
+            <input type="text" name="pokeSearch" id="pokeSearch" placeholder="pikachu" class="pokeSearch">
+            <button onclick="fetchPokemon();" class="btn">Buscar</button>
         </header>
-        <input type="text" name="pokeSearch" id="pokeSearch" placeholder="pikachu" class="pokeSearch">
-        <button onclick="fetchPokemon();" class="btn">Buscar Pokemon</button>
-        <h2 id="pokeName" class="pokeName"></h2>
         <img src="./img/pokeball.jpg" alt="Pokeball" width="200px" id="pokeImg" class="pokeImg">
-        <span id="pokeType1"></span><span id="pokeType2"></span>
-        <section class="card">
+        <h2 id="pokeName" class="pokeName"></h2>
+        <span id="pokeType1"></span>
+        <span id="pokeType2"></span>
+        <div class="info">
             <article class="pokeStats">
                 <label for="pokeAb">Habilidad:  </label>
                 <span id="pokeAb"></span>
@@ -47,7 +48,7 @@
                 <label for="speed">Velocidad:  </label>
                 <span id="speed"></span>
             </article>
-        </section>
+        </div>
     </div>
     <script src="./pokedex.js"></script>
 </body>
