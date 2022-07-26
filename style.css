@@ -34,7 +34,7 @@ header {background-color: purple;}
 
 header .title {
     padding: 10px 10px;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: bold;
 }
 
@@ -58,4 +58,24 @@ header .btn {
 
 .card {
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+main .pokeName {
+    text-transform: capitalize;
+    padding: 15px 20px;
+}
+
+main .pokeImg {
+    width: 70%;
+    filter: drop-shadow(0 3px 6px);
+}
+
+main .stats {
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+
+main #pokeAb {text-transform: capitalize;}
