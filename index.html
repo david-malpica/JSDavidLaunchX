@@ -12,12 +12,14 @@
     <div class="container">
         <header class="header">
             <h1 class="title">Pokedex LaunchX</h1>
-            <input type="text" name="pokeSearch" id="pokeSearch" placeholder="Pikachu" class="pokeSearch">
-            <button onclick="fetchPokemon();" class="btn">Buscar</button>
+            <nav>
+                <input type="text" name="pokeSearch" id="pokeSearch" placeholder="Pikachu" class="pokeSearch">
+                <button onclick="fetchPokemon();" class="btn">Buscar</button>
+            </nav>
         </header>
         <main class="card">
             <h2 id="pokeName" class="pokeName"></h2>
-            <img alt="Pokeball" id="pokeImg" class="pokeImg">
+            <img src="img/pokeball.jpg" alt="Pokeball" id="pokeImg" class="pokeImg">
             <span id="pokeType1"></span>
             <span id="pokeType2"></span>
             <div class="stats">

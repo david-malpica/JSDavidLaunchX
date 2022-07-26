@@ -19,6 +19,14 @@ h2 {font-size: 2.7em;}
 span {font-size: 1.25em;}
 label {font-size: 1.25em;}
 
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
 .container {
     max-width: 1400px;
     margin: auto;
@@ -33,9 +41,16 @@ header {background-color: purple;}
 }
 
 header .title {
-    padding: 10px 10px;
+    padding: 20px 30px;
     font-size: 1.9em;
     font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 header .pokeSearch {
@@ -44,16 +59,7 @@ header .pokeSearch {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid black;
-    margin: 20px 0px;
-}
-
-header .btn {
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .card {
@@ -79,3 +85,18 @@ main .stats {
 }
 
 main #pokeAb {text-transform: capitalize;}
+
+@media (min-width: 720px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    main .pokeImg {width: 20%;}
+}
