@@ -25,14 +25,15 @@ button {
     padding: 10px 20px;
     border-radius: 8px;
     border: 1px solid black;
+    background-color: rgb(178, 34, 34);
+    color: white;
 }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
+button:hover {
+    background-color: rgb(139, 1, 1);
 }
 
-header {background-color: purple;}
+header {background-color: rgb(70, 130, 180);}
 
 .header {
     display: flex;
@@ -60,10 +61,11 @@ header .pokeSearch {
     border-radius: 5px;
     border: 1px solid black;
     margin: 20px;
+    background-color: rgb(255, 255, 224);
 }
 
 .card {
-    background-color: aqua;
+    background-color: rgb(238, 232, 170);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +103,7 @@ main #pokeAb {text-transform: capitalize;}
     .card {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 550px;
     }
 
     main .pokeName {
@@ -117,7 +119,7 @@ main #pokeAb {text-transform: capitalize;}
         width: 40%;
         justify-self: center;
         align-self: end;
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     main .stats {
